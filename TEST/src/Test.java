@@ -12,6 +12,8 @@ public class Test {
 		
 		System.out.println("Adding more line");
 		
+		System.out.println("adding second change");
+		
 	}
 
 }
