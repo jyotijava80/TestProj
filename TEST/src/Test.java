@@ -10,6 +10,8 @@ public class Test {
 		
 		System.out.println( ++i); //output
 		
+		System.out.println("Adding more line");
+		
 	}
 
 }
