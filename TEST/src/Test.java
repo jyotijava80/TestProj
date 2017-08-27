@@ -14,6 +14,8 @@ public class Test {
 		
 		System.out.println("adding second change");
 		
+		System.out.println("Third change");
+		
 	}
 
 }
