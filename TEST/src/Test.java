@@ -21,14 +21,23 @@ public class Test {
 		hMap.put(20, "Aarish");
 		hMap.put(30, "Ranu");
 		
-	  Set set1 = hMap.entrySet();
+	  Set set1 = hMap.keySet();
+	  Set set2=hMap.entrySet();
+	  
 	  Iterator itr = set1.iterator();
+	  Iterator itr2 = set2.iterator();
 	  
 	  while(itr.hasNext())
 	  {
 		  
-		  System.out.println("values are" + itr.next());
+		 // System.out.println("keys are" + itr.next());
+		  System.out.println("values are "+hMap.get(itr.next()));
 		  
+	  }
+	  
+	  while(itr2.hasNext())
+	  {
+		  System.out.println("key and value is-->"+ itr2.next());
 	  }
 	  }
 		
