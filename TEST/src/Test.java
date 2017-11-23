@@ -23,11 +23,20 @@ public class Test {
 		al.add(8);
 		al.add(9);
 		al.add(10);
+		al.add(8);
+		al.add(9);
+		al.add(10);
 		for(Integer g:al)
 		{
 			System.out.println("values from arrayList-->"+ g);
 		}
+		 Collections.sort(al);
+		 
+		 
+		System.out.println("sorted arrayList-->"+ al);
+		Set<Integer> set8 = new HashSet<Integer>(al);
 		
+		System.out.println("after duplicates are removed:-->"+ set8);
 		
 		Iterator itAr = al.iterator();
 		while(itAr.hasNext())
