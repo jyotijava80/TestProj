@@ -1,5 +1,7 @@
 
-public class Car {
+
+
+public class Car implements Cloneable {
 
 	String color;
 	String model;
@@ -50,9 +52,16 @@ public class Car {
 		Car car1=new Car("Grey","baleno",7000000);
 		Car car2=new Car("Silver","breeza",8000000);
 		Car car3=new Car("Red","ertiga",9000000);
-
+	    try {
+			Car car4=(Car)car2.clone();
+			System.out.println("price of car4-->"+car4.getModel());
+		} catch (CloneNotSupportedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		System.out.println("color of car3-->"+ car3.getColor());
 		System.out.println("price of car2-->"+car2.getPrice());
+		
 	}
 
 
