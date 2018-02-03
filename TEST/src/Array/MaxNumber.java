@@ -18,6 +18,9 @@ public class MaxNumber {
 			
 		}
 		System.out.println("maximum number in the array is-->"+temp);
+		
+		
+		
 	}
 	
 

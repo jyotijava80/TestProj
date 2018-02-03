@@ -2,6 +2,7 @@ package Array;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -11,7 +12,28 @@ public class DuplicateCharacter {
 	public static void main(String[] args) {
 		
 		String s = "JyotiPrakashJenadddd";
-		List ll = new ArrayList();
+		List<String> ll = new ArrayList<String>();
+		ll.add("hello");
+		ll.add("hi");
+		ll.add("welcome");
+		
+		// using forloop:
+		System.out.println("using for loop");
+		for(String lv : ll)
+		{
+			
+			
+			System.out.println(lv); 
+		}
+		
+		// using iterator:
+		
+		Iterator<String> itr = ll.iterator();
+		System.out.println("using for Iterator");
+		while(itr.hasNext())
+		{
+			System.out.println(itr.next());
+		}
 		
 		
 		char []chararr = s.toCharArray();
@@ -40,6 +62,13 @@ public class DuplicateCharacter {
 			}
 			
 		}
+		
+		
+		int i,j;
+		int k = 0;
+		j=2;
+		k=j=i=1;
+		System.out.println("value of k: "+ k);
 		
 		
 
