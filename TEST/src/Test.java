@@ -3,6 +3,25 @@ import java.util.Set;
 import java.util.ArrayList;
 public class Test {
 	
+	 public String getModel() {
+		return Model;
+	}
+
+	public void setModel(String model) {
+		Model = model;
+	}
+
+	public String getOwner() {
+		return Owner;
+	}
+
+	public void setOwner(String owner) {
+		Owner = owner;
+	}
+
+	String Model;
+	 String Owner;
+	
 	public static void main (String args[]) {
 		
 		int i = 5;
